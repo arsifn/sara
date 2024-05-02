@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #666;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  main {
+    padding: 20px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ارسي فن</h1>
+</header>
+
+<nav>
+  <a href="الصفحه الرئيسية.html">الصفحة الرئيسية</a>
+  <a href="منتجاتنا.html">منتجاتنا</a>
+  <a href="اتصل بنا.html">اتصل بنا</a>
+  <a href="حول.html">حول</a>
+</nav>
+
+<main>
+  <!-- هنا يمكنك وضع محتوى صفحتك -->
+</main>
+
+<footer>
+  <p>تاريخ اليوم: <time id="current-date"></time></p>
+  <p>الساعة الحالية: <time id="current-time"></time></p>
+  <p>السنة الحالية: <time id="current-year"></time></p>
+  <script>
+    document.getElementById("current-date").textContent = new Date().toLocaleDateString();
+    document.getElementById("current-time").textContent = new Date().toLocaleTimeString();
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
